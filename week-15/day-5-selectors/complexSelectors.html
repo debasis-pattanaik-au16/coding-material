@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex CSS</title>
+
+    <style>
+
+        /* Child selector */
+        section p{
+            color: indigo;
+        }
+
+        section p span, .btn{
+            color: hotpink;
+        }
+
+
+        /* Multiple CSS selector */
+        p,button, h1, section{
+            color: green;
+        }
+
+        /* Immediate Child */
+        section > p{
+            background-color: lawngreen;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+    <div>
+        <section>
+            <p></p>
+            <h1></h1>
+            <div></div>
+        </section>
+        <section>
+
+        </section>
+    </div>
+
+    <section>
+        <h1></h1>
+        <section></section>
+        <p>This is a paras <span>SPAN</span></p>
+    </section>
+
+    <span>Out Span</span>
+
+    <section>
+        <div>
+            <p>This is div para</p>
+        </div>
+        <p>This is 1st para is of section</p>
+        <p>This para is of section</p>
+        <p>This para is of section</p>
+    </section>
+    
+    <button class="btn">Default</button>
+    <button id="warningButton" class="btn-warning btn">Warning</button>
+    <button class="btn btn-danger">Danger</button>
+
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+
+</body>
+</html>

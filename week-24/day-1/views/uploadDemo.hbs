@@ -1,0 +1,22 @@
+
+<div class="container">
+    <h1 class="text-center display-5">Upload Demo</h1>
+    <div class="d-flex justify-content-center align-items-center">
+        <form action="/handleUpload" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="username" class="form-label">Enter your username</label>
+                <input type="text" name="username" class="form-control" id="username">
+            </div>
+            <div class="mb-3">
+                <label for="demoFile" class="form-label">Upload any file</label>
+                <input type="file" name="testFile" class="form-control" id="demoFile"/>
+            </div>
+            {{!-- <div class="mb-3">
+                <label for="demoFile" class="form-label">Upload any file</label>
+                <input type="file" name="avatar" class="form-control" id="demoFile"/>
+            </div> --}}
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+</div>

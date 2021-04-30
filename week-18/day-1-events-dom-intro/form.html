@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    
+    <form action="#">
+        <input type="text" name='username'>
+        <button type="submit">Submit</button>
+    </form>
+
+    <a href="https://google.com" id="link">Go to Google</a>
+    <script>
+        var form = document.getElementsByTagName('form')[0]
+        var link = document.getElementById('link')
+
+        form.addEventListener('submit', function(e){
+            e.preventDefault()
+            
+            console.log('Submitted')
+
+        })
+
+        link.addEventListener('click', function(e){
+            e.preventDefault()
+            
+            console.log('Stopped Redirection')
+
+            // window.open('')
+
+        })
+
+        // var arr = ["name", "Something", "Anything", "Thing?"]
+        // var newArray = arr.map(function (item, index, abc){
+        //     console.log(`${item} index = ${index}`, abc)
+        //     abc[index] = 'Hacked'
+        //     return item.length
+        // })
+
+        // console.log(newArray);
+        // console.log(arr);
+    </script>
+
+</body>
+</html>

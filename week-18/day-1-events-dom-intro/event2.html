@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: indianred;
+            padding: 5px;
+        }
+
+        .box{
+            height: 50px;
+            width: 50px;
+            margin: 5px;
+            background-color: lawngreen;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+    <script>
+        var container = document.getElementsByClassName('container')[0]
+        var boxElement = document.getElementsByClassName('box')[0]
+
+        container.addEventListener('click', function(e){
+            
+            // console.log(e)
+            console.log('Clicked Container')
+        })
+
+        boxElement.addEventListener('click', function(e){
+            e.stopPropagation()
+            console.log("Clicked Box")
+        })
+    </script>
+
+</body>
+</html>

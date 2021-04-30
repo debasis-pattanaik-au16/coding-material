@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            background-color: indianred;
+            padding: 5px;
+        }
+
+        .box{
+            height: 50px;
+            width: 50px;
+            margin: 5px;
+            background-color: lawngreen;
+        }
+
+        .myClass {
+            background-color: black;
+            border: 3px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container myClass">
+        <div class="box"></div>
+    </div>
+
+    <button id="addBox">Add Box</button>
+    <button id="styleBtn">Change Style</button>
+
+    <script>
+        var styleButton = document.getElementById('styleBtn')
+        styleButton.addEventListener('click', function (){
+            var container = document.getElementsByClassName('container')[0]
+
+            // container.style.backgroundColor = 'red'
+            // container.style.border = '2px solid blue'
+
+            // container.classList.add('myClass')
+            // container.classList.remove('container')
+            container.className = 'test'
+        })
+    </script>
+
+
+
+    <script>
+        var buttonElement = document.getElementById('addBox')
+        var container = document.getElementsByClassName('container')[0]
+        
+        console.log(container)
+        
+        buttonElement.addEventListener('click', handleClick)
+        
+        function handleClick(){
+            console.log('Clicked')
+            var oldContent = container.innerHTML
+            // console.log(oldContent);
+            container.innerHTML = oldContent + '<div class="box"></div>'
+
+
+
+            // buttonElement.innerText = "Custom Text"
+            // var mySource = 'https://via.placeholder.com/30'
+            // buttonElement.innerHTML = `<img src="${mySource}" /> Custom Text`
+            // buttonElement.innerHTML = "<img src='" + mySource + "' /> Custom Text"
+
+        }
+    </script>
+</body>
+</html>

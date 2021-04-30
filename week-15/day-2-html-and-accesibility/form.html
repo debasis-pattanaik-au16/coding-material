@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://google.com" >
+
+        <fieldset>
+            
+            <div>
+                <label for="emailId">Email:</label>
+                <input id="emailId" type="email" name="email" >
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input id="password" type="password" name="pass" >
+            </div>
+        </fieldset>
+        
+        <label for="mySelect">Select your fav letter</label>
+        <select name="required" id="mySelect" required>
+            <option value="">Select Your Value</option>
+            <optgroup label="First Set">
+               
+                <option value="1">True</option>
+                <option value="2">False</option>
+            </optgroup>
+            <optgroup label="Second Set">
+                <option value="3">C</option>
+                <option value="4">D</option>
+            </optgroup>
+        </select>
+
+        <div role="toolbar"></div>
+        
+
+        <!-- <div>
+            <label>
+                Email:
+                <input type="email" name="email">
+            </label>
+        </div> -->
+        <input type="submit" role="button" aria-describedby="" aria-required="true">
+        <input type="reset" role="button">
+    </form>
+</body>
+</html>

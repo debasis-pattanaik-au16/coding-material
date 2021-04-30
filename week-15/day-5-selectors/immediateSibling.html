@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immediate Sibling</title>
+
+    <style>
+
+    /* Affect the first paragraph sibling of span with a style  */
+    span + p {
+        background-color: green;
+    }
+
+
+    </style>
+</head>
+<body>
+
+    <p>asdasdasd <span>asdasd</span> <span></span></p>
+
+    <p>This is paragraph</p>
+    <span>This is span</span>
+    <p>This is paragraph</p>
+    <p>This is 2nd Paragraph</p>
+
+    
+</body>
+</html>
