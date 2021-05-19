@@ -3,6 +3,8 @@ const expHbs = require('express-handlebars')
 const session = require('express-session')
 const myStore = new session.MemoryStore()
 
+const packageName = require('/public/js/browser');
+
 const express = require('express');
 const app = express();
 
@@ -18,6 +20,8 @@ const user = [
         password: '123abc'
     }
 ]
+
+app.use(express.static('./public'))
 
 app.engine('hbs', expHbs({ extname: 'hbs'  }))
 app.set('view engine', 'hbs')

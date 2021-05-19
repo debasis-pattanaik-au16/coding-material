@@ -1,0 +1,15 @@
+<div class="container">
+    
+    <form action="/city" method="post">
+
+        <input type="text" name="cityName" >
+
+        <select name="countryId" >
+            {{#each countries}}
+                <option value="{{this.country_id}}">{{this.country}}</option>
+            {{/each}}
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
