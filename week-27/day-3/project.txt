@@ -1,0 +1,30 @@
+1. Proposals
+    - Properly structured doc/readme which will have all the necessary details like
+        - Scope (Future/Current)
+        - Features
+        - Tech (Nodejs/express)
+
+
+2. Development Stage
+    - Time Slot based (round robin fashion)
+    - Mentor Session ()
+
+3. Evaluation
+    100 marks
+
+
+    - Presentation (20 marks) 
+        - Video or working presentation of the project. (Group Performance) (10 marks)
+        - The students will present their project along to a panel(probably), (Individual Performance) (10 marks)
+          and the panel will ask questions about the concepts used or any specific feature.
+
+    - Technical (30 marks)
+        - Code Readability (5 marks)
+        - Code Organization/Modularity (5 marks)
+        - How many features/portion completed based on the initial proposal (10 marks)
+        - Clean Commits in Git / Usage of GitHub (2 marks)
+        - Individual Student Contributions in commits (8 marks)
+            - Can be viewed using GitHub
+            - Can evaluate regarding their commits
+            - If the group is of 2 students, then each of them will get their individual marks out of 4 (4 narks)
+        

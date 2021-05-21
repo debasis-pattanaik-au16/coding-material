@@ -33,8 +33,8 @@ app.use(express.urlencoded({extended: false}));
 
 cloudinary.config({
     cloud_name: 'attainu-test',
-    api_key: '397128298779636',
-    api_secret: 'Y830wQ4vu5XSMGSEg7nyQ3aiAKY',
+    api_key: '723624596189911',
+    api_secret: 'nCRfrJTIPDIOUbqEfMm_JdSY29k',
 })
 
 app.use('/actor', actorRouter)
@@ -77,9 +77,10 @@ try {
     
     // req.files.myFile.data
     
-    const bas64FormattedString = Base64.encode(req.files.myFile.data)
-    const uploadResult  = await cloudinary.uploader.upload(`data:${req.files.myFile.mimetype};base64,${bas64FormattedString}`)
-
+    // const bas64FormattedString = Base64.encode(req.files.myFile.data)
+    let base64String = req.files.myFile.data.toString('base64') //btoa(String.fromCharCode(...new Uint8Array(req.files.myFile.data)));
+    const uploadResult  = await cloudinary.uploader.upload(`data:${req.files.myFile.mimetype};base64,${base64String}`, { resource_type: 'raw' })
+    // btoa
     res.json(uploadResult);
 
     } catch (error) {
